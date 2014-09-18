@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: MainTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2.052 sec <<< FAILURE!
+testSqrt(MainTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Exception expected because of negative number
+	at junit.framework.Assert.fail(Assert.java:47)
+	at MainTest.testSqrt(MainTest.java:48)
+testSlowMethod(MainTest)  Time elapsed: 0.998 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Slow method is too slow
+	at junit.framework.Assert.fail(Assert.java:47)
+	at MainTest.testSlowMethod(MainTest.java:89)
+testAbs2(MainTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<0> but was:<1000>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:198)
+	at junit.framework.Assert.assertEquals(Assert.java:204)
+	at MainTest.testAbs2(MainTest.java:40)
